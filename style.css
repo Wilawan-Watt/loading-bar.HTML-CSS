@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    height: 80vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.box-container {
+    border: 10px solid white;
+    border-radius: 20px;
+    width: 110vw;
+    height: 140px;
+    padding: 10px;
+}
+
+.box-1 {
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    animation-name: loading-scale;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-timing-function: initial;
+}
+
+@keyframes loading-scale {
+    0% {
+        width: 0%;
+        background-color: red;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
+
+.box-info {
+    /* outline: 1px solid red; */
+    margin: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Chakra Petch", sans-serif;
+    overflow: hidden;
+}
+
+.box-info span {
+    opacity: 0;
+    display: inline-block;
+    animation: appear 2s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 10%;
+    }
+
+    .box-container {
+        width: 100%;
+    }
+
+    .box-info {
+        font-size: 6vw;
+    }
+
+    @keyframes loading-scale {
+        0% {
+            width: 0%;
+            background-color: red;
+        }
+
+        50% {
+            background-color: yellow;
+        }
+
+        100% {
+            width: 100%;
+            background-color: greenyellow;
+        }
+    }
+}
