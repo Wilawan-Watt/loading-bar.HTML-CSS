@@ -19,7 +19,7 @@ body {
 .box-container {
     border: 10px solid white;
     border-radius: 20px;
-    width: 110vw;
+    width: 800px;
     height: 140px;
     padding: 10px;
 }
@@ -82,14 +82,6 @@ body {
 @media (max-width: 700px) {
     body {
         margin: 10%;
-    }
-
-    .box-container {
-        width: 100%;
-    }
-
-    .box-info {
-        font-size: 6vw;
     }
 
     @keyframes loading-scale {
