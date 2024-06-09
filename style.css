@@ -8,8 +8,7 @@
 
 body {
     background-color: #333;
-    height: 80vh;
-    width: auto;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,24 +78,18 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     body {
-        margin: 10%;
+        margin: 5%;
     }
 
-    @keyframes loading-scale {
-        0% {
-            width: 0%;
-            background-color: red;
-        }
+    .box-info span {
+        font-size: 25px;
+    }
+}
 
-        50% {
-            background-color: yellow;
-        }
-
-        100% {
-            width: 100%;
-            background-color: greenyellow;
-        }
+@media (min-width: 481px) {
+    body {
+        margin: 12%;
     }
 }
